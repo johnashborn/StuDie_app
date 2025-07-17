@@ -13,7 +13,7 @@ Anyways, here are the current features👇👇
 📸 Camera Calculator  
 Snap a photo of a math problem and let the app do the thinking. It uses OCR to read the expression and solves it using `exp4j`. Fast, simple, and kinda magical and it still amazes me how it worked.
 
-📄 DOCX/Text to PDF Converter (to be upgraded)
+📄 DOCX/Text to PDF Converter (to be upgraded)\n
 Write your notes or pick an existing file—StuDie turns it into a clean PDF in seconds using Android’s built-in `PdfDocument`. Handy for assignments, reviewers, or anything else. But if your document has a picture, it won't 
 convert it into pdf but instead it will vanish into the void.
 

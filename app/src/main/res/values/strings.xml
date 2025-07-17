@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">StuDie</string>
+
+    <string name="select"> Select Gender</string>
+    <string name="Educ"> Educational level</string>
+    <string name="title_activity_main_home">mainHome</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">To be continued</string>
+    <string name="title_notifications">Profile</string>
+
+
+</resources>

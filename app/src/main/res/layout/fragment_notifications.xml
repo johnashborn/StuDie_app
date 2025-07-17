@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.notifications.NotificationsFragment"
+   android:background="@drawable/background_profile" >
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <LinearLayout
+            android:id="@+id/ProfileInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="336dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:fontFamily="@font/agbalumo"
+                android:paddingTop="15dp"
+                android:text="About you...."
+                android:textColor="@color/black"
+                android:textSize="30dp" />
+
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/profile_image"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                android:background="@color/white"
+                android:scaleType="centerCrop"
+                android:src="@drawable/icons8_avatar_50"
+                app:shapeAppearanceOverlay="@style/CircleImageView"
+                app:strokeColor="@color/black"
+                app:strokeWidth="2dp" />
+
+
+            <ImageButton
+                android:id="@+id/changePic"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="226dp"
+                android:layout_marginTop="-27dp"
+                android:background="@drawable/icons8_camera_27__1_" />
+
+            <TextView
+                android:id="@+id/TrueProfileName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/alegreya_sc_medium"
+                android:padding="10dp"
+                android:text="Name : "
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+
+            <TextView
+                android:id="@+id/TrueGender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/alegreya_sc_medium"
+                android:padding="10dp"
+                android:text="Gender : "
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+
+            <TextView
+                android:id="@+id/TrueEducLevel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/alegreya_sc_medium"
+                android:padding="10dp"
+                android:text="Educational level : "
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/TrueAge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/alegreya_sc_medium"
+                android:padding="10dp"
+                android:text="Age : "
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/LogOut"
+                android:layout_width="wrap_content"
+                android:layout_height="49dp"
+                android:drawableStart="@drawable/icons8_log_out_50"
+                android:fontFamily="@font/alegreya_sc_medium"
+                android:padding="10dp"
+                android:text="log-out  "
+                android:layout_marginTop="270dp"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/agbalumo</item>
+        <item>@font/alegreya_sc_medium</item>
+        <item>@font/bellota_light</item>
+        <item>@font/bellota_text_light</item>
+        <item>@font/bricolage_grotesque_extralight</item>
+    </array>
+</resources>

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".pdfConvert"
+    android:background="@drawable/log_in_background">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="100dp"
+                    android:fontFamily="@font/agbalumo"
+                    android:text="PDF Converter"
+                    android:textColor="#D6000000"
+                    android:textSize="30sp" />
+
+
+
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/editTextFilename"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Title"
+                android:layout_margin="16dp"
+                android:textColorHighlight="#7C7979"
+                android:textColor="@color/black"
+                android:textColorHint="#888888"
+                android:layout_gravity="center"
+                android:background="@drawable/bondpaper"/>
+
+
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:layout_margin="16dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/bondpaper"
+                android:padding="12dp"
+                android:scrollbars="vertical">
+
+                <EditText
+                    android:id="@+id/editTextPdfInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="serif"
+                    android:gravity="start|top"
+                    android:hint="Type your document here..."
+                    android:inputType="textMultiLine"
+                    android:maxLines="50"
+                    android:minLines="20"
+                    android:textColor="#000000"
+                    android:textColorHint="#686565"
+                    android:textSize="16sp" />
+            </ScrollView>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="32dp"
+                android:layout_marginEnd="32dp"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <ImageButton
+                    android:id="@+id/pdfFromFile"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="100dp"
+                    android:background="@drawable/icons8_file_folder_48"
+                    android:padding="8dp" />
+
+
+                <ImageView
+                    android:id="@+id/logIn"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:background="@drawable/circlearrowoutline"
+                    app:srcCompat="@drawable/outline_arrow_circle_right_24"
+                    app:tint="#FB8100"
+                    android:layout_marginTop="10dp"
+                    android:onClick="exportToPdf"/>
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginStart="100dp"
+                android:layout_marginTop="-18dp"
+                android:fontFamily="@font/agbalumo"
+                android:text="Choose \n from file"
+                android:textColor="@color/black"
+                android:textSize="13dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="Convert"
+                android:fontFamily="@font/agbalumo"
+                android:textColor="@color/black"
+                android:textSize="13dp"
+                android:layout_marginStart="275dp"
+                android:layout_marginTop="-30dp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

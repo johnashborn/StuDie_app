@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment"
+    android:background="@drawable/log_in_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:fontFamily="@font/agbalumo"
+                    android:padding="15dp"
+                    android:text="Welcome!"
+                    android:textColor="@color/black"
+                    android:textSize="40sp"
+                    android:layout_marginTop="30dp"/>
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:fontFamily="@font/agbalumo"
+                    android:padding="10dp"
+                    android:text="What would you like to do? "
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/pdf"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="15dp"
+                    android:background="@drawable/button"
+                    android:drawableStart="@drawable/icons8_pdf_28"
+                    android:drawableEnd="@drawable/outline_arrow_circle_right_24"
+                    android:padding="15dp"
+                    android:text="Word to pdf file"
+                    android:textColor="@color/black" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/calculator"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="15dp"
+                    android:background="@drawable/button"
+                    android:drawableStart="@drawable/icons8_calculator_28"
+                    android:drawableEnd="@drawable/outline_arrow_circle_right_24"
+                    android:padding="15dp"
+                    android:text="Camera calculator"
+                    android:textColor="@color/black" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/photo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="15dp"
+                    android:background="@drawable/button"
+                    android:drawableStart="@drawable/icons8_photo_27"
+                    android:drawableEnd="@drawable/outline_arrow_circle_right_24"
+                    android:padding="15dp"
+                    android:text="photo to text file"
+                    android:textColor="@color/black" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/voice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="15dp"
+                    android:background="@drawable/button"
+                    android:drawableStart="@drawable/icons8_voice_27"
+                    android:drawableEnd="@drawable/outline_arrow_circle_right_24"
+                    android:padding="15dp"
+                    android:text="Voice to text file"
+                    android:textColor="@color/black" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/remove"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="15dp"
+                    android:background="@drawable/button"
+                    android:drawableStart="@drawable/icons8_remove_27"
+                    android:drawableEnd="@drawable/outline_arrow_circle_right_24"
+                    android:padding="15dp"
+                    android:text="REmove background of pictures"
+                    android:textColor="@color/black" />
+
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/flashcards"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="15dp"
+                    android:background="@drawable/button"
+                    android:drawableStart="@drawable/icons8_anki_27"
+                    android:drawableEnd="@drawable/outline_arrow_circle_right_24"
+                    android:padding="15dp"
+                    android:text="File to flashcards"
+                    android:textColor="@color/black" />
+
+
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

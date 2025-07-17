@@ -42,6 +42,7 @@ A smart assistant you can talk to—works offline, helps you review, and mimics 
 
 • Built with Java in Android Studio  
 • Uses XML for the layouts and design
+
 • OCR for text recognition (camera calculator)  
 • Android’s native PdfDocument for PDF generation  
 • Version control via Git + GitHub

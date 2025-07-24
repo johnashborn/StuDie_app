@@ -29,22 +29,76 @@
                 android:layout_marginBottom="8dp"/>
 
             <TextView
-                android:id="@+id/equationText"
-                android:layout_width="match_parent"
+                android:id="@+id/editHint"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="20sp"
-                android:padding="12dp"
-                android:background="@drawable/bondpaper"
-                android:layout_marginBottom="16dp"/>
+                android:text="Edit the problem below if needed:"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:layout_marginBottom="4dp"/>
 
-            <TextView
-                android:id="@+id/solutionText"
+            <EditText
+                android:id="@+id/equationText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textSize="18sp"
                 android:padding="12dp"
                 android:background="@drawable/bondpaper"
-                android:textColor="@color/black"/>
+                android:layout_marginBottom="12dp"
+                android:textColor="@color/black"
+                android:hint="Enter your math problem here..."
+                android:inputType="text"
+                android:maxLines="3"
+                android:scrollHorizontally="true"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="16dp"
+                android:gravity="center">
+
+                <ImageButton
+                    android:id="@+id/solveButton"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginEnd="12dp"
+                    android:background="@drawable/button"
+                    android:src="@android:drawable/ic_menu_search"
+                    android:contentDescription="Solve"
+                    android:tooltipText="Solve Now"/>
+
+                <ImageButton
+                    android:id="@+id/restart"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/button"
+                    app:srcCompat="@drawable/icons8_restart_27"
+                    android:contentDescription="Clear"
+                    android:tooltipText="Clear All"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/solutionLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Step-by-Step Solution:"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:id="@+id/solutionText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:padding="12dp"
+                android:background="@drawable/bondpaper"
+                android:textColor="@color/black"
+                android:text="Enter a math problem above to see the solution..."
+                android:lineSpacingExtra="4dp"/>
 
         </LinearLayout>
     </ScrollView>

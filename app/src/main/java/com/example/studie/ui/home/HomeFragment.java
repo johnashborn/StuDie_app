@@ -15,6 +15,7 @@ import androidx.lifecycle.ViewModelProvider;
 import com.example.studie.camCalculator;
 import com.example.studie.databinding.FragmentHomeBinding;
 import com.example.studie.pdfConvert;
+import com.example.studie.pngToText;
 
 public class HomeFragment extends Fragment {
 
@@ -37,6 +38,11 @@ public class HomeFragment extends Fragment {
 
         binding.calculator.setOnClickListener(v -> {
             Intent intent = new Intent(requireContext(), camCalculator.class);
+            startActivity(intent);
+        });
+
+        binding.photo.setOnClickListener(v->{
+            Intent intent = new Intent(requireContext(), pngToText.class);
             startActivity(intent);
         });
 

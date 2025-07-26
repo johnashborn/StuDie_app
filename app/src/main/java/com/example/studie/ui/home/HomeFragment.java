@@ -16,6 +16,7 @@ import com.example.studie.camCalculator;
 import com.example.studie.databinding.FragmentHomeBinding;
 import com.example.studie.pdfConvert;
 import com.example.studie.pngToText;
+import com.example.studie.speechToText;
 
 public class HomeFragment extends Fragment {
 
@@ -43,6 +44,11 @@ public class HomeFragment extends Fragment {
 
         binding.photo.setOnClickListener(v->{
             Intent intent = new Intent(requireContext(), pngToText.class);
+            startActivity(intent);
+        });
+
+        binding.voice.setOnClickListener(v->{
+            Intent intent = new Intent(requireContext(), speechToText.class);
             startActivity(intent);
         });
 

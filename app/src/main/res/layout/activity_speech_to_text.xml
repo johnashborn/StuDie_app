@@ -123,18 +123,6 @@
                 android:contentDescription="Clear transcribed text" />
 
             <!-- File Search Button -->
-            <com.google.android.material.button.MaterialButton
-                android:id="@+id/fileSearchButton"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Import File"
-                android:textColor="@android:color/white"
-                android:layout_marginStart="8dp"
-                style="@style/Widget.MaterialComponents.Button"
-                app:backgroundTint="#2196F3"
-                app:icon="@drawable/icons8_file_folder_48"
-                app:iconGravity="textStart"
-                android:contentDescription="Import audio file for transcription" />
 
         </LinearLayout>
 

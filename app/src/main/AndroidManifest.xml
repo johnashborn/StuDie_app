@@ -30,6 +30,12 @@
             android:name=".pngToText"
             android:exported="false" />
         <activity
+            android:name=".flashcards"
+            android:exported="false" />
+        <activity
+            android:name=".delete_background"
+            android:exported="false" />
+        <activity
             android:name=".solution"
             android:exported="false" />
         <activity

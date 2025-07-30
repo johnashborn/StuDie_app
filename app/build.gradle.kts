@@ -82,6 +82,9 @@ dependencies {
     implementation("org.slf4j:slf4j-simple:2.0.5")
     implementation ("net.objecthunter:exp4j:0.4.8")
 
+    implementation ("com.google.mlkit:segmentation-selfie:16.0.0-beta5")
+
+
 
 
 

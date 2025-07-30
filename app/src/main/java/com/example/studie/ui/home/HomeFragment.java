@@ -14,6 +14,7 @@ import androidx.lifecycle.ViewModelProvider;
 
 import com.example.studie.camCalculator;
 import com.example.studie.databinding.FragmentHomeBinding;
+import com.example.studie.delete_background;
 import com.example.studie.pdfConvert;
 import com.example.studie.pngToText;
 import com.example.studie.speechToText;
@@ -49,6 +50,11 @@ public class HomeFragment extends Fragment {
 
         binding.voice.setOnClickListener(v->{
             Intent intent = new Intent(requireContext(), speechToText.class);
+            startActivity(intent);
+        });
+
+        binding.remove.setOnClickListener(v->{
+            Intent intent =  new Intent(requireContext(), delete_background.class);
             startActivity(intent);
         });
 

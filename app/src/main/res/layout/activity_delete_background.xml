@@ -174,7 +174,9 @@
             app:iconGravity="textStart"
             app:iconPadding="8dp" />
 
+
         <!-- Process Button -->
+
         <com.google.android.material.button.MaterialButton
             android:id="@+id/processButton"
             android:layout_width="0dp"
@@ -188,6 +190,9 @@
             app:icon="@drawable/icons8_wand_50"
             app:iconGravity="textStart"
             app:iconPadding="8dp" />
+
+
+
 
     </LinearLayout>
 

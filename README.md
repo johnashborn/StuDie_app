@@ -1,58 +1,56 @@
 📚 StuDie — Your Student Buddy App
-
-Hey there! 👋  
-StuDie is a personal side project I'm working on to make student life a little easier. Think of it as your academic buddy—packed with useful tools to help you study smarter, not harder, cuz we hate that do we? haha
-
-
-
-Anyways, here are the current features👇👇
-
+Hey there! 👋
+StuDie is a personal side project I’m building to make student life just a little easier.
+Think of it as your academic sidekick—packed with useful tools to help you study smarter, not harder.
+Because let’s be honest... no one wants to study harder 😤
 
 🚀 Current Features
+📸 Camera Calculator
+Snap a photo of a math problem and let the app solve it for you.
+Uses OCR to read expressions and evaluates them using exp4j.
+Fast, simple, and honestly... it still blows my mind how it works.
 
-📸 Camera Calculator  
-Snap a photo of a math problem and let the app do the thinking. It uses OCR to read the expression and solves it using `exp4j`. Fast, simple, and kinda magical and it still amazes me how it worked.
+📄 DOCX/Text to PDF Converter (WIP upgrade)
+Write notes in-app or pick an existing .txt or .docx file—StuDie turns it into a clean, printable PDF using Android’s native PdfDocument.
 
-📄 DOCX/Text to PDF Converter (to be upgraded)
+⚠️ Image support in DOCX isn't fully working yet—images currently disappear into the void (fix in progress).
 
-Write your notes or pick an existing file—StuDie turns it into a clean PDF in seconds using Android’s built-in `PdfDocument`. Handy for assignments, reviewers, or anything else. But if your document has a picture, it won't 
-convert it into pdf but instead it will vanish into the void.
+🎙 Speech to Text
+Record your voice and convert it into editable text. Great for lectures, quick notes, or when your hands are just too lazy to type.
 
-
+🖼️ Background Remover
+Remove the background from images—perfect for IDs, presentations, or any clean cutout you need.
+Currently supports human-only segmentation using ML Kit's Selfie Segmentation (offline!).
 
 🔮 Coming Soon...
+🧠 Flashcard Generator
+Generate smart flashcards directly from your notes or documents—perfect for quick reviews.
 
-Here’s what’s cooking:
+📅 To-Do List + Calendar Integration
+Organize tasks, exam schedules, and deadlines—all in one synced view.
 
-🎙 Speech to Text  
-Record your voice and turn it into editable text. No typing needed.
+🤖 Offline AI Study Buddy
+Talk to a smart assistant that works offline. It’ll help you review, explain concepts, and even chat like a virtual study partner. No Wi-Fi? No problem.
 
-🧠 Flashcard Generator  
-Automatically create study flashcards from your documents or notes.
+🛠 Tech Stack
+Language: Java
 
-📅 To-Do List + Calendar Integration  
-Keep track of tasks, exams, and deadlines—all in one place.
+IDE: Android Studio
 
-🤖 Offline AI Study Buddy  
-A smart assistant you can talk to—works offline, helps you review, and mimics a real-time convo like a virtual study partner.
+UI: XML-based layouts
 
+OCR: ML Kit Text Recognition (Camera Calculator)
 
+PDF Generation: Android’s native PdfDocument
 
-🛠 Tech Stuff
+Speech Recognition: Android’s SpeechRecognizer API
 
-• Built with Java in Android Studio  
-• Uses XML for the layouts and design
+Background Removal: ML Kit Selfie Segmentation
 
-• OCR for text recognition (camera calculator)  
-• Android’s native PdfDocument for PDF generation  
-• Version control via Git + GitHub
-
+Version Control: Git + GitHub
 
 🤝 Wanna Contribute?
+Still very much a work-in-progress—your suggestions, ideas, or pull requests are always welcome!
 
-This is still a work-in-progress, so any ideas, suggestions, or pull requests are more than welcome!
-
-Thanks for checking it out! 🙌  
+Thanks for checking out StuDie! 🙌
 Let’s build something awesome for students, by a student.
-
-

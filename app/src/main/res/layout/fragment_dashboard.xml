@@ -8,20 +8,24 @@
     android:padding="16dp">
 
     <!-- Optional header text -->
+
+    <!-- RecyclerView for subjects -->
+
     <TextView
         android:id="@+id/textDashboard"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Your Subjects"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="12dp"
+        android:text="Your Subjects dawg"
         android:textSize="18sp"
-        android:textStyle="bold"
-        android:layout_marginBottom="12dp"/>
+        android:textStyle="bold" />
 
-    <!-- RecyclerView for subjects -->
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/subjectRecyclerView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="661dp"
+        android:layout_marginTop="60dp"
         android:clipToPadding="false"
-        android:scrollbars="vertical"/>
+        android:scrollbars="vertical" />
 </LinearLayout>

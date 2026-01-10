@@ -128,9 +128,8 @@
                     android:drawableStart="@drawable/icons8_anki_27"
                     android:drawableEnd="@drawable/outline_arrow_circle_right_24"
                     android:padding="15dp"
-                    android:text="File to flashcards"
+                    android:text="Create Flashcards"
                     android:textColor="@color/black" />
-
 
 
             </LinearLayout>

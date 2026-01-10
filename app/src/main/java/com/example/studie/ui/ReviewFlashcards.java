@@ -220,28 +220,76 @@ public class ReviewFlashcards extends AppCompatActivity {
     }
 
     private void showCompletion() {
-        questionCard.setVisibility(View.VISIBLE);
-        answerCard.setVisibility(View.GONE);
-        instructionText.setVisibility(View.GONE);
-        buttonRow.setVisibility(View.GONE);
+        // Update progress to 100%
+        progressBar.setProgress(100);
+        progressText.setText("Completed!");
 
-        questionText.setText("🎉 All Done!\n\nFinal Score: " + correctCount + "/" + totalAnswered);
+        // Calculate percentage
+        int percentage = totalAnswered > 0 ? (int) ((float) correctCount / totalAnswered * 100) : 0;
 
-        if (totalAnswered > 0) {
-            int percentage = (int) ((float) correctCount / totalAnswered * 100);
-            progressBar.setProgress(100);
-            progressText.setText("Completed!");
-
-            // Optional: Show performance message
-            String message = "";
-            if (percentage >= 90) {
-                message = "\n\nExcellent work! Brayt kaayo ka dawg";
-            } else if (percentage >= 70) {
-                message = "\n\nGood job! Normal raka dawg";
-            } else {
-                message = "\n\nKeep practicing! Nah pag study jud tarong";
-            }
-            questionText.append(message);
+        // Determine performance message
+        String message;
+        if (percentage >= 90) {
+            message = "Excellent work! Brayt kaayo ka dawg 🌟";
+        } else if (percentage >= 70) {
+            message = "Good job! Normal raka dawg 👍";
+        } else {
+            message = "Keep practicing! Nah pag study jud tarong 💪";
         }
+
+        // Create and show completion dialog
+        showCompletionDialog(percentage, message);
+    }
+
+    private void showCompletionDialog(int percentage, String message) {
+        androidx.appcompat.app.AlertDialog.Builder builder = new androidx.appcompat.app.AlertDialog.Builder(this);
+
+        // Inflate custom dialog layout
+        View dialogView = getLayoutInflater().inflate(R.layout.dialog_completion, null);
+        builder.setView(dialogView);
+
+        // Get views from dialog
+        TextView scoreText = dialogView.findViewById(R.id.dialogScoreText);
+        TextView percentageText = dialogView.findViewById(R.id.dialogPercentageText);
+        TextView messageText = dialogView.findViewById(R.id.dialogMessageText);
+        MaterialButton tryAgainButton = dialogView.findViewById(R.id.tryAgainButton);
+        MaterialButton backButton = dialogView.findViewById(R.id.backButton);
+
+        // Set text
+        scoreText.setText(correctCount + "/" + totalAnswered);
+        percentageText.setText(percentage + "%");
+        messageText.setText(message);
+
+        // Create dialog
+        androidx.appcompat.app.AlertDialog dialog = builder.create();
+        dialog.setCancelable(false); // Prevent dismissing by tapping outside
+
+        // Try Again button - restart the session
+        tryAgainButton.setOnClickListener(v -> {
+            dialog.dismiss();
+            restartFlashcards();
+        });
+
+        // Back button - close activity
+        backButton.setOnClickListener(v -> {
+            dialog.dismiss();
+            finish(); // Close the activity and return to previous screen
+        });
+
+        dialog.show();
+    }
+
+    private void restartFlashcards() {
+        // Reset counters
+        currentIndex = 0;
+        correctCount = 0;
+        totalAnswered = 0;
+
+        // Reload flashcards
+        queue.clear();
+        loadFlashcards();
+
+        // Show first card
+        showCard();
     }
 }

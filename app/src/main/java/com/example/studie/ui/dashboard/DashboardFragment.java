@@ -9,8 +9,16 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.studie.databinding.FragmentDashboardBinding;
+import com.example.studie.ui.FlashcardStorage;
+import com.example.studie.ui.Subject;
+import com.example.studie.ui.SubjectAdapter;
+
+import java.util.List;
+import com.example.studie.R;
 
 public class DashboardFragment extends Fragment {
 
@@ -26,6 +34,17 @@ public class DashboardFragment extends Fragment {
 
         final TextView textView = binding.textDashboard;
         dashboardViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
+
+        RecyclerView subjectList = root.findViewById(R.id.subjectRecyclerView);
+        subjectList.setLayoutManager(new LinearLayoutManager(getContext()));
+
+        // Load saved subjects
+        List<Subject> subjects = FlashcardStorage.loadSubjects(getContext());
+
+        // Attach adapter
+        SubjectAdapter adapter = new SubjectAdapter(subjects);
+        subjectList.setAdapter(adapter);
+
         return root;
     }
 

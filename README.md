@@ -29,10 +29,11 @@ Remove the background from images—perfect for IDs, presentations, or any clean
 Currently supports human-only segmentation using ML Kit's Selfie Segmentation (offline!).
 
 🧠 Flashcard Creator
+Create flashcards and study them for your exams
 
 
 To be continued
-Create flashcards and study them for your exams
+
 
 📅 To-Do List + Calendar Integration
 

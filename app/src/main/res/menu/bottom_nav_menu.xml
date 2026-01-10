@@ -8,8 +8,8 @@
 
     <item
         android:id="@+id/navigation_dashboard"
-        android:icon="@drawable/ic_dashboard_black_24dp"
-        android:title="To be continued" />
+        android:icon="@drawable/flash_card"
+        android:title="Flashcards" />
 
     <item
         android:id="@+id/navigation_notifications"

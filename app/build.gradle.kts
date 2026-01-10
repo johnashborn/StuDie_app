@@ -83,6 +83,7 @@ dependencies {
     implementation ("net.objecthunter:exp4j:0.4.8")
 
     implementation ("com.google.mlkit:segmentation-selfie:16.0.0-beta5")
+    implementation ("com.google.code.gson:gson:2.10.1")
 
 
 

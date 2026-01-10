@@ -28,11 +28,11 @@ Record your voice and convert it into editable text. Great for lectures, quick n
 Remove the background from images—perfect for IDs, presentations, or any clean cutout you need.
 Currently supports human-only segmentation using ML Kit's Selfie Segmentation (offline!).
 
-🔮 Coming Soon...
+🧠 Flashcard Creator
 
-🧠 Flashcard Generator
 
-Generate smart flashcards directly from your notes or documents—perfect for quick reviews.
+To be continued
+Create flashcards and study them for your exams
 
 📅 To-Do List + Calendar Integration
 
@@ -41,6 +41,8 @@ Organize tasks, exam schedules, and deadlines—all in one synced view.
 🤖 Offline AI Study Buddy
 
 Talk to a smart assistant that works offline. It’ll help you review, explain concepts, and even chat like a virtual study partner. No Wi-Fi? No problem.
+
+---------------------
 
 🛠 Tech Stack
 
